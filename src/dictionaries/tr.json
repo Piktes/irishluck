@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "about":   "Hakkımızda",
+    "menu":    "Menü",
+    "events":  "Etkinlikler",
+    "gallery": "Galeri",
+    "reviews": "Yorumlar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "eyebrow":    "Tepe Prime, Ankara",
+    "title_1":    "EVERYONE",
+    "title_2":    "NEEDS",
+    "title_3":    "LUCK",
+    "subtitle":   "Ankara'nın kalbinde gerçek İrlanda pub deneyimi — zengin craft bira seçkisi, nadide viski koleksiyonu ve haftalık canlı sahne performansları.",
+    "cta_menu":   "Menüyü İncele",
+    "cta_reserve":"Rezervasyon Yap",
+    "ticker_items": [
+      "☘ Craft Bira",
+      "🥃 Premium Viski",
+      "🎸 Canlı Müzik",
+      "🍔 Gastropub Lezzetleri",
+      "🇮🇪 Gerçek İrlanda Atmosferi",
+      "📍 Tepe Prime, Çankaya",
+      "☘ Craft Bira",
+      "🥃 Premium Viski",
+      "🎸 Canlı Müzik",
+      "🍔 Gastropub Lezzetleri",
+      "🇮🇪 Gerçek İrlanda Atmosferi",
+      "📍 Tepe Prime, Çankaya"
+    ]
+  },
+  "about": {
+    "eyebrow":       "Hikayemiz",
+    "title":         "İrlanda Ruhunu Ankara'ya Taşıdık",
+    "desc_1":        "Irish Luck, Ankara Tepe Prime'ın kalbinde İrlanda pub kültürünü modern bir gazropub deneyimiyle buluşturuyor. Özenle seçilmiş müzik, sıcak ahşap atmosfer ve güler yüzlü ekibimizle her ziyaretçimize benzersiz anlar yaşatıyoruz.",
+    "desc_2":        "Haftanın her günü zengin craft bira çeşitlerimiz, nadide viski koleksiyonumuz ve şeflerimizin elinden çıkan özel gastropub lezzetleriyle hizmetinizdeyiz. Canlı müzik gecelerinde ise müziğin ritmini bizimle hissedeceksiniz.",
+    "hours_title":   "Çalışma Saatleri",
+    "weekdays_label":"Pazartesi – Perşembe",
+    "weekdays_hours":"11:00 – 01:00",
+    "weekends_label":"Cuma – Pazar",
+    "weekends_hours":"11:00 – 02:00",
+    "location_note": "Tepe Prime Avenue, A Blok karşısı",
+    "stat_1_value":  "100+",
+    "stat_1_label":  "Bira Çeşidi",
+    "stat_2_value":  "50+",
+    "stat_2_label":  "Viski Etiketi",
+    "stat_3_value":  "4",
+    "stat_3_label":  "Canlı Müzik / Ay",
+    "stat_4_value":  "4.8",
+    "stat_4_label":  "Ortalama Puan",
+    "badge_beer":    "Craft & İthal Biralar",
+    "badge_whiskey": "Özel Viski Koleksiyonu",
+    "badge_kitchen": "Gastropub Mutfağı",
+    "badge_music":   "Canlı Performanslar"
+  },
+  "menu": {
+    "eyebrow":      "Menümüz",
+    "title":        "Damak Tadınıza Uygun Lezzetler",
+    "subtitle":     "Özenle hazırladığımız yemekler, kokteyllerimiz ve geniş bira & viski menümüze göz atın.",
+    "cat_beers":    "Biralar & İçecekler",
+    "cat_whiskeys": "Viski & Kokteyl",
+    "cat_kitchen":  "Gastropub Mutfağı",
+    "cat_beers_desc":    "Dünyadan seçilmiş yerli, ithal ve craft biralar; fıçı ve şişe seçenekleriyle.",
+    "cat_whiskeys_desc": "Zengin İrlanda, İskoç ve Bourbon viski koleksiyonu; imza kokteyller ve shot menüsü.",
+    "cat_kitchen_desc":  "Gurme burgerlerimiz, çıtır atıştırmalıklar ve şefimizin özel gastropub tabakları.",
+    "pdf_title":    "Tam Menüyü İnceleyin",
+    "pdf_desc":     "Tüm yemekler, içecekler ve fiyatlar için PDF menümüzü indirebilir veya çevrimiçi görüntüleyebilirsiniz.",
+    "view_pdf":     "Menüyü Görüntüle",
+    "download_pdf": "PDF İndir"
+  },
+  "events": {
+    "eyebrow":  "Canlı Sahne & Etkinlikler",
+    "title":    "Haftalık Sahne Programı",
+    "subtitle": "Kulağınızın pasını silecek canlı müzik performansları ve özel etkinlik takvimimiz.",
+    "no_events":"Bu hafta için planlanmış etkinlik bulunmuyor. Takipte kalın!",
+    "reserve":  "WhatsApp ile Rezervasyon"
+  },
+  "gallery": {
+    "eyebrow":      "Galeriden Kareler",
+    "title":        "Mekandan Anlar",
+    "subtitle":     "Irish Luck atmosferini, lezzetlerimizi ve unutulmaz geceleri keşfedin.",
+    "filter_all":   "Tümü",
+    "filter_place": "Mekan",
+    "filter_food":  "Yemek & İçecek",
+    "filter_events":"Etkinlikler"
+  },
+  "reviews": {
+    "eyebrow":  "Müşteri Yorumları",
+    "title":    "Misafirlerimiz Ne Diyor?",
+    "subtitle": "Irish Luck'ı ziyaret eden misafirlerimizin samimi deneyimleri."
+  },
+  "contact": {
+    "eyebrow":        "İletişim",
+    "title":          "Bize Ulaşın",
+    "subtitle":       "Rezervasyon, etkinlik detayları veya her türlü sorunuz için buradayız.",
+    "address_label":  "Adres",
+    "phone_label":    "Telefon",
+    "email_label":    "E-posta",
+    "social_label":   "Instagram",
+    "reserve_text":   "Rezervasyon için WhatsApp üzerinden bize yazabilirsiniz.",
+    "reserve_btn":    "WhatsApp ile Rezervasyon",
+    "hours_title":    "Çalışma Saatleri",
+    "weekdays":       "Pazartesi – Perşembe",
+    "weekdays_time":  "11:00 – 01:00",
+    "weekends":       "Cuma – Pazar",
+    "weekends_time":  "11:00 – 02:00"
+  },
+  "footer": {
+    "tagline":   "\"Everyone Needs Luck\"",
+    "address":   "Tepe Prime Avenue, Çankaya / Ankara",
+    "copyright": "Tüm hakları saklıdır.",
+    "made_in":   "Made in Ankara"
+  }
+}

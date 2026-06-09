@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "about":   "About",
+    "menu":    "Menu",
+    "events":  "Events",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow":    "Tepe Prime, Ankara",
+    "title_1":    "EVERYONE",
+    "title_2":    "NEEDS",
+    "title_3":    "LUCK",
+    "subtitle":   "The authentic Irish pub experience in the heart of Ankara — a rich craft beer selection, rare whiskey collection, and weekly live stage performances.",
+    "cta_menu":   "View Menu",
+    "cta_reserve":"Book a Table",
+    "ticker_items": [
+      "☘ Craft Beer",
+      "🥃 Premium Whiskey",
+      "🎸 Live Music",
+      "🍔 Gastropub Kitchen",
+      "🇮🇪 Authentic Irish Atmosphere",
+      "📍 Tepe Prime, Çankaya",
+      "☘ Craft Beer",
+      "🥃 Premium Whiskey",
+      "🎸 Live Music",
+      "🍔 Gastropub Kitchen",
+      "🇮🇪 Authentic Irish Atmosphere",
+      "📍 Tepe Prime, Çankaya"
+    ]
+  },
+  "about": {
+    "eyebrow":       "Our Story",
+    "title":         "Bringing the Irish Spirit to Ankara",
+    "desc_1":        "Irish Luck unites Irish pub culture with a modern gastropub experience in the heart of Ankara Tepe Prime. With carefully curated music, a warm wooden atmosphere, and our friendly team, every visit creates unforgettable moments.",
+    "desc_2":        "Seven days a week we welcome you with our rich craft beer selection, rare whiskey collection, and exclusive gastropub dishes crafted by our chefs. On live music nights, you'll feel the rhythm of the music with us.",
+    "hours_title":   "Opening Hours",
+    "weekdays_label":"Monday – Thursday",
+    "weekdays_hours":"11:00 AM – 1:00 AM",
+    "weekends_label":"Friday – Sunday",
+    "weekends_hours":"11:00 AM – 2:00 AM",
+    "location_note": "Tepe Prime Avenue, opposite A Block",
+    "stat_1_value":  "100+",
+    "stat_1_label":  "Beer Varieties",
+    "stat_2_value":  "50+",
+    "stat_2_label":  "Whiskey Labels",
+    "stat_3_value":  "4",
+    "stat_3_label":  "Live Shows / Month",
+    "stat_4_value":  "4.8",
+    "stat_4_label":  "Average Rating",
+    "badge_beer":    "Craft & Imported Beers",
+    "badge_whiskey": "Premium Whiskey Collection",
+    "badge_kitchen": "Gastropub Kitchen",
+    "badge_music":   "Live Performances"
+  },
+  "menu": {
+    "eyebrow":      "Our Menu",
+    "title":        "Flavors for Every Taste",
+    "subtitle":     "Explore our carefully prepared dishes, cocktails, and wide selection of beers & whiskeys.",
+    "cat_beers":    "Beers & Drinks",
+    "cat_whiskeys": "Whiskey & Cocktails",
+    "cat_kitchen":  "Gastropub Kitchen",
+    "cat_beers_desc":    "Carefully selected local, imported and craft beers; available on tap and bottled.",
+    "cat_whiskeys_desc": "Rich collection of Irish, Scotch and Bourbon whiskeys; signature cocktails and shot menu.",
+    "cat_kitchen_desc":  "Gourmet burgers, crispy finger food, and the chef's special gastropub plates.",
+    "pdf_title":    "View the Full Menu",
+    "pdf_desc":     "Download or browse our PDF menu to see all dishes, drinks and prices.",
+    "view_pdf":     "View Menu",
+    "download_pdf": "Download PDF"
+  },
+  "events": {
+    "eyebrow":  "Live Stage & Events",
+    "title":    "Weekly Stage Programme",
+    "subtitle": "Live music performances and our special events calendar to rock your nights.",
+    "no_events":"No events scheduled for this week. Stay tuned!",
+    "reserve":  "Book via WhatsApp"
+  },
+  "gallery": {
+    "eyebrow":      "Gallery",
+    "title":        "Shots from the Pub",
+    "subtitle":     "Explore the Irish Luck atmosphere, our flavours, and unforgettable nights.",
+    "filter_all":   "All",
+    "filter_place": "Venue",
+    "filter_food":  "Food & Drink",
+    "filter_events":"Events"
+  },
+  "reviews": {
+    "eyebrow":  "Guest Reviews",
+    "title":    "What Our Guests Say",
+    "subtitle": "Genuine experiences shared by our visiting guests."
+  },
+  "contact": {
+    "eyebrow":        "Contact",
+    "title":          "Get in Touch",
+    "subtitle":       "For reservations, event details or any enquiry — we're here.",
+    "address_label":  "Address",
+    "phone_label":    "Phone",
+    "email_label":    "Email",
+    "social_label":   "Instagram",
+    "reserve_text":   "Message us on WhatsApp to book a table.",
+    "reserve_btn":    "Book via WhatsApp",
+    "hours_title":    "Opening Hours",
+    "weekdays":       "Monday – Thursday",
+    "weekdays_time":  "11:00 AM – 1:00 AM",
+    "weekends":       "Friday – Sunday",
+    "weekends_time":  "11:00 AM – 2:00 AM"
+  },
+  "footer": {
+    "tagline":   "\"Everyone Needs Luck\"",
+    "address":   "Tepe Prime Avenue, Çankaya / Ankara",
+    "copyright": "All rights reserved.",
+    "made_in":   "Made in Ankara"
+  }
+}

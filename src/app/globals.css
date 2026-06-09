@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C88A28;
+  --color-gold-light: #DFA840;
+  --color-green: #1C5C32;
+  --color-green-deep: #0D3320;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* ── Theme tokens ─────────────────────────────────────
+   All section colours go through these CSS vars so
+   [data-theme="light"] can flip them in one block.    */
+:root {
+  /* section backgrounds */
+  --s-void:  #09080A;   /* hero, menu, gallery, contact  */
+  --s-deep:  #0F0E10;   /* events                        */
+  --s-warm:  #F2EBE0;   /* about, reviews                */
+  --s-foot:  #07060A;   /* footer                        */
+
+  /* text / borders on DARK sections */
+  --od-1:  #F2EBE0;
+  --od-2:  rgba(242,235,224,.6);
+  --od-3:  rgba(242,235,224,.33);
+  --od-b:  rgba(242,235,224,.08);
+
+  /* text / borders on LIGHT sections */
+  --ol-1:  #1A1510;
+  --ol-2:  rgba(26,21,16,.58);
+  --ol-3:  rgba(26,21,16,.32);
+  --ol-b:  rgba(26,21,16,.1);
+
+  /* accent — same in both themes */
+  --gold:       #C88A28;
+  --gold-l:     #DFA840;
+  --green:      #1C5C32;
+  --green-deep: #0D3320;
+}
+
+[data-theme="light"] {
+  --s-void:  #FAFAF6;
+  --s-deep:  #F0E9DF;
+  --s-warm:  #E5DDD0;
+  --s-foot:  #EDE5D8;
+
+  --od-1:  #1A1510;
+  --od-2:  rgba(26,21,16,.6);
+  --od-3:  rgba(26,21,16,.32);
+  --od-b:  rgba(26,21,16,.09);
+
+  /* light-section text unchanged — still dark ink */
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--color-void);
+  color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Layout ──────────────────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin-left: auto; margin-right: auto;
+  padding-left: clamp(1.5rem, 5vw, 5rem);
+  padding-right: clamp(1.5rem, 5vw, 5rem);
+}
+.section-pad {
+  padding-top: clamp(5rem, 9vw, 9rem);
+  padding-bottom: clamp(5rem, 9vw, 9rem);
+}
+
+/* ── Typography ─────────────────────────────────────── */
+.eyebrow {
+  font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.26em; text-transform: uppercase;
+  color: var(--color-gold);
+}
+.display-heading {
+  font-family: var(--font-display);
+  font-weight: 900; line-height: 1.04; letter-spacing: -0.015em;
+}
+.display-italic {
+  font-family: var(--font-display);
+  font-style: italic; font-weight: 400; line-height: 1.15;
+}
+
+/* ── CTAs ─────────────────────────────────────────────── */
+.cta-gold {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.9rem 2.25rem;
+  background: var(--color-gold); color: var(--color-void);
+  font-size: 0.725rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  border: 2px solid var(--color-gold);
+  text-decoration: none; cursor: pointer;
+  transition: background 0.2s, border-color 0.2s; white-space: nowrap;
+}
+.cta-gold:hover { background: var(--color-gold-light); border-color: var(--color-gold-light); }
+
+.cta-ghost-light {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.9rem 2.25rem;
+  background: transparent; color: var(--color-cream);
+  font-size: 0.725rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  border: 2px solid rgba(242,235,224,0.25);
+  text-decoration: none; cursor: pointer;
+  transition: border-color 0.2s; white-space: nowrap;
+}
+.cta-ghost-light:hover { border-color: rgba(242,235,224,0.7); }
+
+.cta-ghost-dark {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.9rem 2.25rem;
+  background: transparent; color: var(--color-ink);
+  font-size: 0.725rem; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  border: 2px solid rgba(26,21,16,0.22);
+  text-decoration: none; cursor: pointer;
+  transition: border-color 0.2s; white-space: nowrap;
+}
+.cta-ghost-dark:hover { border-color: rgba(26,21,16,0.65); }
+
+/* ── Ticker ──────────────────────────────────────────── */
+.ticker-track { display: flex; width: max-content; animation: ticker 35s linear infinite; }
+
+/* ── Animations ─────────────────────────────────────── */
+@keyframes ticker   { from { transform: translateX(0); }    to { transform: translateX(-50%); } }
+@keyframes fadeUp   { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes spin-slow { from { transform: rotate(0deg); }   to { transform: rotate(360deg); } }
+
+/* ── Admin System ───────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.05em;
+  border-radius: 8px; border: 1px solid transparent;
+  cursor: pointer; transition: all 0.15s; font-family: inherit;
+  text-decoration: none; white-space: nowrap;
+}
+.btn-gold   { background: var(--color-gold); color: var(--color-void); border-color: var(--color-gold); }
+.btn-gold:hover  { background: var(--color-gold-light); }
+.btn-green  { background: var(--color-green); color: #fff; }
+.btn-green:hover { background: #174e2a; }
+.btn-ghost  { background: rgba(255,255,255,0.05); color: var(--color-cream); border-color: rgba(255,255,255,0.1); }
+.btn-ghost:hover { background: rgba(255,255,255,0.1); }
+.btn-outline { background: transparent; color: var(--color-cream); border-color: rgba(255,255,255,0.2); }
+.btn-outline:hover { border-color: var(--color-gold); color: var(--color-gold); }
+
+.input {
+  width: 100%; padding: 0.7rem 0.875rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; outline: none;
+  color: var(--color-cream); font-size: 0.875rem; font-family: inherit;
+  transition: border-color 0.15s;
+}
+.input:focus { border-color: rgba(200,138,40,0.5); }
+.input::placeholder { color: rgba(242,235,224,0.3); }
+
+.input-label {
+  display: block; font-size: 0.6875rem; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(242,235,224,0.5); margin-bottom: 0.375rem;
+}
+
+.alert { display: flex; align-items: flex-start; gap: 0.625rem; padding: 0.875rem 1rem; border-radius: 8px; font-size: 0.875rem; }
+.alert-success { background: rgba(30,92,50,0.18); border: 1px solid rgba(30,92,50,0.35); color: #7cca90; }
+.alert-error   { background: rgba(180,40,40,0.12); border: 1px solid rgba(180,40,40,0.3); color: #f08080; }
+
+.badge {
+  display: inline-flex; align-items: center;
+  padding: 0.25rem 0.75rem; border-radius: 99px;
+  font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  background: rgba(200,138,40,0.12); color: var(--color-gold);
+  border: 1px solid rgba(200,138,40,0.25);
+}
+
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th {
+  text-align: left; padding: 0.75rem 1rem;
+  font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(242,235,224,0.38); border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.admin-table td {
+  padding: 0.875rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: var(--color-cream); font-size: 0.875rem; vertical-align: middle;
+}
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-void); }
+::-webkit-scrollbar-thumb { background: rgba(242,235,224,0.12); border-radius: 3px; }
