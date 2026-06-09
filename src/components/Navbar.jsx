@@ -58,8 +58,18 @@ export default function Navbar({ lang, dict }) {
     { href: '#contact', label: isEn ? 'Contact' : 'İletişim'    },
   ];
 
+  const isDark = theme === 'dark';
+  const c1   = isDark ? '#F2EBE0'              : '#1A1510';
+  const c06  = isDark ? 'rgba(242,235,224,0.6)': 'rgba(26,21,16,0.65)';
+  const c04  = isDark ? 'rgba(242,235,224,0.4)': 'rgba(26,21,16,0.45)';
+  const cBg  = isDark ? 'rgba(242,235,224,0.08)': 'rgba(26,21,16,0.07)';
+  const cBd  = isDark ? 'rgba(242,235,224,0.12)': 'rgba(26,21,16,0.15)';
+  const cBdH = 'rgba(200,138,40,0.4)';
   const navBg = scrolled
-    ? 'rgba(9,8,10,0.93)'
+    ? isDark ? 'rgba(9,8,10,0.93)' : 'rgba(250,250,246,0.93)'
+    : 'transparent';
+  const navBorder = scrolled
+    ? isDark ? 'rgba(242,235,224,0.07)' : 'rgba(26,21,16,0.1)'
     : 'transparent';
 
   return (
@@ -69,13 +79,13 @@ export default function Navbar({ lang, dict }) {
         transition: 'background 0.4s, backdrop-filter 0.4s, border-color 0.4s',
         background: navBg,
         backdropFilter: scrolled ? 'blur(18px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(242,235,224,0.07)' : '1px solid transparent',
+        borderBottom: `1px solid ${navBorder}`,
       }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', height: '4.5rem', gap: '1.5rem' }}>
 
           <Link href={`/${lang}`} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
             <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>☘</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '1rem', letterSpacing: '0.12em', color: '#F2EBE0' }}>
+            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '1rem', letterSpacing: '0.12em', color: c1 }}>
               IRISH LUCK
             </span>
           </Link>
@@ -84,9 +94,9 @@ export default function Navbar({ lang, dict }) {
             {links.map(l => (
               <li key={l.href}>
                 <a href={l.href}
-                  style={{ display: 'block', padding: '0.5rem 0.9rem', fontSize: '0.775rem', fontWeight: 600, letterSpacing: '0.05em', color: 'rgba(242,235,224,0.6)', textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#F2EBE0')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(242,235,224,0.6)')}>
+                  style={{ display: 'block', padding: '0.5rem 0.9rem', fontSize: '0.775rem', fontWeight: 600, letterSpacing: '0.05em', color: c06, textDecoration: 'none', transition: 'color 0.2s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = c1)}
+                  onMouseLeave={e => (e.currentTarget.style.color = c06)}>
                   {l.label}
                 </a>
               </li>
@@ -96,18 +106,18 @@ export default function Navbar({ lang, dict }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }} className="lg:ml-0 ml-auto">
             {/* Theme toggle */}
             <button onClick={toggleTheme}
-              style={{ background: 'rgba(242,235,224,0.08)', border: '1px solid rgba(242,235,224,0.12)', borderRadius: '50%', width: '2rem', height: '2rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(242,235,224,0.6)', transition: 'all 0.2s', flexShrink: 0 }}
-              onMouseEnter={e => { e.currentTarget.style.color = '#F2EBE0'; e.currentTarget.style.borderColor = 'rgba(200,138,40,0.4)'; }}
-              onMouseLeave={e => { e.currentTarget.style.color = 'rgba(242,235,224,0.6)'; e.currentTarget.style.borderColor = 'rgba(242,235,224,0.12)'; }}
+              style={{ background: cBg, border: `1px solid ${cBd}`, borderRadius: '50%', width: '2rem', height: '2rem', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', color: c06, transition: 'all 0.2s', flexShrink: 0 }}
+              onMouseEnter={e => { e.currentTarget.style.color = c1; e.currentTarget.style.borderColor = cBdH; }}
+              onMouseLeave={e => { e.currentTarget.style.color = c06; e.currentTarget.style.borderColor = cBd; }}
               title={theme === 'dark' ? (isEn ? 'Light mode' : 'Açık tema') : (isEn ? 'Dark mode' : 'Koyu tema')}
             >
               {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
             </button>
 
             <Link href={`/${lang === 'tr' ? 'en' : 'tr'}`}
-              style={{ fontSize: '0.675rem', fontWeight: 700, letterSpacing: '0.18em', color: 'rgba(242,235,224,0.4)', textDecoration: 'none', transition: 'color 0.2s' }}
-              onMouseEnter={e => (e.currentTarget.style.color = '#F2EBE0')}
-              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(242,235,224,0.4)')}>
+              style={{ fontSize: '0.675rem', fontWeight: 700, letterSpacing: '0.18em', color: c04, textDecoration: 'none', transition: 'color 0.2s' }}
+              onMouseEnter={e => (e.currentTarget.style.color = c1)}
+              onMouseLeave={e => (e.currentTarget.style.color = c04)}>
               {lang === 'tr' ? 'EN' : 'TR'}
             </Link>
 
