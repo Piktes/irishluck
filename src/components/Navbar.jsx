@@ -59,6 +59,7 @@ export default function Navbar({ lang, dict }) {
   ];
 
   const isDark = theme === 'dark';
+  const cLeaf = isDark ? '#5DBF7A' : '#1C5C32';
   const c1   = isDark ? '#F2EBE0'              : '#1A1510';
   const c06  = isDark ? 'rgba(242,235,224,0.6)': 'rgba(26,21,16,0.65)';
   const c04  = isDark ? 'rgba(242,235,224,0.4)': 'rgba(26,21,16,0.45)';
@@ -84,7 +85,13 @@ export default function Navbar({ lang, dict }) {
         <div className="container" style={{ display: 'flex', alignItems: 'center', height: '4.5rem', gap: '1.5rem' }}>
 
           <Link href={`/${lang}`} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', textDecoration: 'none', flexShrink: 0 }}>
-            <span style={{ fontSize: '1.2rem', lineHeight: 1 }}>☘</span>
+            <svg width="22" height="22" viewBox="0 0 100 110" fill={cLeaf} style={{ flexShrink: 0 }}>
+              <circle cx="50" cy="28" r="24"/>
+              <circle cx="28" cy="56" r="24"/>
+              <circle cx="72" cy="56" r="24"/>
+              <rect x="46" y="62" width="8" height="34" rx="4"/>
+              <ellipse cx="38" cy="96" rx="16" ry="6"/>
+            </svg>
             <span style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: '1rem', letterSpacing: '0.12em', color: c1 }}>
               IRISH LUCK
             </span>
